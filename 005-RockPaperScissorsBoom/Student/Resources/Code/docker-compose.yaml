@@ -1,7 +1,7 @@
 version: '3'
 services:
   rockpaperscissors-sql:
-    image: microsoft/mssql-server-linux
+    image:  mcr.microsoft.com/mssql/server:2019-latest
     container_name: rockpaperscissors-sql
     environment:
         SA_PASSWORD: "M1cr0s0ft2018"
