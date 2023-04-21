@@ -16,4 +16,4 @@ endIp=0.0.0.0
 az group create --name $resourceGroup --location "$location" --tags $tag
 az sql server create --name $server --resource-group $resourceGroup --location "$location" --admin-user $login --admin-password $password
 az sql server firewall-rule create --resource-group $resourceGroup --server $server -n AllowYourIp --start-ip-address $startIp --end-ip-address $endIp
-az sql db create --resource-group $resourceGroup --server $server --name $database --sample-name AdventureWorksLT --edition GeneralPurpose --family Gen5 --capacity 2 --zone-redundant true # zone redundancy is only supported on premium and business critical service tiers
+az sql db create --resource-group $resourceGroup --server $server --name $database --service-objective S0
