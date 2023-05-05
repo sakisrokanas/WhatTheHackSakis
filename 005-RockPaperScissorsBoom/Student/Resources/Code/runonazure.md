@@ -1,4 +1,4 @@
-//Set variables
+//Set variables for the connection in cloud shell
 RG=wthrpsrg
 az account set --<your subscription here>
 
